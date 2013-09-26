@@ -1,0 +1,24 @@
+{
+  "name":           "tomato-cms",
+  "main":           "./lib/index.js",
+  "version":        "0.0.1",
+  "description":    "CMS系统",
+  "author":         "leizongmin <leizongmin@gmail.com> (http://ucdok.com)",
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/node-tomato/tomato-cms.git"
+  },
+  "engines": {
+    "node":         ">= 0.8.0"
+  },
+  "dependencies": {
+    "debug":        "~0.7.2",
+    "tomato":       "git+https://github.com/node-tomato/tomato.git"
+  },
+  "devDependencies": {
+    "mocha":        ">= 1.2"
+  },
+  "scripts": {
+    "test":         "mocha -t 5000"
+  }
+}
