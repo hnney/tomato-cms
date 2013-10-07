@@ -16,6 +16,9 @@
     "connect":          "*",
     "jugglingdb":       "0.2.x",
     "jugglingdb-mysql": "latest",
+    "lei-mysql":        "*",
+    "rd":               "*",
+    "async":            "0.2.x",
     "tomato":           "git+https://github.com/node-tomato/tomato.git#new-idea"
   },
   "devDependencies": {

@@ -11,7 +11,9 @@ exports.db = {
     port:     3306,
     database: 'tomato',
     username: 'root',
-    password: ''
+    user:     'root',
+    password: '',
+    pool:     10
   }
 };
 

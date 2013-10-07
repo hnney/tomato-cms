@@ -1,0 +1,21 @@
+[
+  {
+    "name": "id",
+    "type": "auto-id"
+  },
+  {
+    "name": "username",
+    "type": "text",
+    "length": 50,
+    "required": true,
+    "null": false,
+    "unique": true
+  },
+  {
+    "name": "password",
+    "type": "text",
+    "length": 38,
+    "required": true,
+    "null": false
+  }
+]
