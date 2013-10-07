@@ -1,0 +1,9 @@
+{
+  "msg": {
+    "error": {
+      "userNotExists": "用户%1不存在",
+      "invalideUsername": "用户名格式不正确",
+      "passwordTooShort": "密码太短"
+    }
+  }
+}

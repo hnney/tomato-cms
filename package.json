@@ -12,13 +12,17 @@
     "node":         ">= 0.8.0"
   },
   "dependencies": {
-    "debug":        "~0.7.2",
-    "tomato":       "git+https://github.com/node-tomato/tomato.git"
+    "debug":            "~0.7.2",
+    "connect":          "*",
+    "jugglingdb":       "0.2.x",
+    "jugglingdb-mysql": "latest",
+    "tomato":           "git+https://github.com/node-tomato/tomato.git#new-idea"
   },
   "devDependencies": {
     "mocha":        ">= 1.2"
   },
   "scripts": {
-    "test":         "mocha -t 5000"
+    "test":         "mocha -t 5000",
+    "start":        "node start.js"
   }
 }
