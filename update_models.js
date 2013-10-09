@@ -109,6 +109,25 @@ function makeFieldsItem (info) {
     case 'password':
       var ret = {type: 'varchar', size: 38, charset: 'utf8'};
       break;
+    case 'long-text':
+      var ret = {type: 'text', charset: 'utf8'};
+      break;
+    case 'email':
+    case 'url':
+      var ret = {type: 'varchar', size: 255, charset: 'utf8'};
+      break;
+    case 'time':
+    case 'date':
+    case 'datetime':
+    case 'integer':
+      var ret = {type: 'int'};
+      break;
+    case 'number':
+      var ret = {type: 'double'};
+      break;
+    case 'range':
+      var ret = {type: info.isInteger ? 'int' : 'double'};
+      break;
     default:
       throw new Error('Bad format');
   }
@@ -129,7 +148,7 @@ function makeFieldsItem (info) {
 function makeIndexesItem (name, info) {
   var ret = {fields: name};
   switch (info.type) {
-    case 'text':
+    case 'long-text':
       ret.fullText = true;
       break;
   }
