@@ -9,7 +9,7 @@ exports.db = {
   connection: {
     host:     '127.0.0.1',
     port:     3306,
-    database: 'tomato',
+    database: 'test',
     username: 'root',
     user:     'root',
     password: '',

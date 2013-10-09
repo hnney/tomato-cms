@@ -1,21 +1,18 @@
-[
-  {
-    "name": "id",
+{
+  "id": {
     "type": "auto-id"
   },
-  {
-    "name": "username",
+  "username": {
     "type": "text",
     "length": 50,
     "required": true,
     "null": false,
     "unique": true
   },
-  {
-    "name": "password",
+  "password": {
     "type": "text",
     "length": 38,
     "required": true,
     "null": false
   }
-]
+}
